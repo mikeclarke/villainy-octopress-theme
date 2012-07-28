@@ -19,12 +19,16 @@
   <li class="link">
     <a href="/about/">about</a>
   </li>
+{% if site.twitter_user %}
   <li class="link">
-    <a href="http://twitter.com/drunkdev/">twitter</a>
+    <a href="http://twitter.com/{{ site.twitter_user }}/">twitter</a>
   </li>
+{% endif %}
+{% if site.github_user and site.github_show_profile_link %}
   <li class="link">
-    <a href="http://github.com/villainy/">github</a>
+    <a href="http://github.com/{{ site.github_user }}/">github</a>
   </li>
+{% endif %}
   <li class="link rss">
     <a href="/atom.xml">rss feed</a>
   </li>
