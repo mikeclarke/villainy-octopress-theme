@@ -1,11 +1,11 @@
 {% if paginator.next_page %}
   <span class="next">
-    <a href="{{paginator.next_page}}" rel="next">Continue &rarr;</a>
+    <a href="{{paginator.next_page_path}}" rel="next">Continue &rarr;</a>
   </span>
 {% endif %}
 {% if paginator.previous_page and paginator.page > 1 %}
   <span class="prev">
-    <a href="{{paginator.previous_page}}" rel="prev">Newer &larr;</a>
+    <a href="{{paginator.previous_page_path}}" rel="prev">Newer &larr;</a>
   </span>
 {% elsif paginator.previous_page %}
   <span class="prev">
